@@ -1,0 +1,108 @@
+body,
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: hsl(27, 66%, 92%);
+}
+
+#expense-whole-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#balance-container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: hsl(10, 79%, 65%);
+  padding: 20px;
+  width: 80vw;
+  margin: 20px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 2px 8px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+#balance-container h2 {
+  font-size: 16px;
+}
+
+#balance-container p {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#circle-logo {
+  position: relative;
+}
+
+#white-circle {
+  height: 47.79px;
+  width: 47.79px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  right: 20px;
+}
+
+#brown-circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: hsl(25, 47%, 15%);
+  position: absolute;
+  right: 0;
+}
+
+#spending-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  width: 80vw;
+  height: 90%;
+  margin: 20px;
+  padding: 40px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 2px 8px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+#spending-container h2,
+#spending-container #weeklyTotal {
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+  font-size: 24px;
+  padding: 10px;
+}
+
+#spendChart {
+  width: 100%;
+  height: 90%;
+}
+
+#total-month-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#weekly-average {
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+  font-size: 24px;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

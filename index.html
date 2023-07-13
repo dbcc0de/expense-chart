@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Expenses chart component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="expense-whole-container">
+      <div id="balance-container">
+        <section>
+          <h2>My balance</h2>
+          <p id="current-balance">$921.48</p>
+        </section>
+        <div id="circle-logo">
+          <div id="brown-circle"></div>
+          <div id="white-circle"></div>
+        </div>
+      </div>
+      <div id="spending-container">
+        <h2>Spending - Last 7 days</h2>
+        <canvas id="spendChart"></canvas>
+        <hr />
+        <div id="total-month-container">
+          <div id="total-amount">
+            <p>Weekly total:</p>
+            <p id="weeklyTotal">$</p>
+          </div>
+          <div id="weekly-average-container">
+            <p>Daily average spend:</p>
+            <p id="weekly-average"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
